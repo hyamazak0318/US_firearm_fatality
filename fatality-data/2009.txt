@@ -1,0 +1,89 @@
+"Notes"	"State"	"State Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	830	4757938	17.44
+	"Alaska"	"02"	104	698895	14.88
+	"Arizona"	"04"	856	6343154	13.49
+	"Arkansas"	"05"	465	2896843	16.05
+	"California"	"06"	3094	36961229	8.37
+	"Colorado"	"08"	583	4972195	11.73
+	"Connecticut"	"09"	173	3561807	4.86
+	"Delaware"	"10"	76	891730	8.52
+	"District of Columbia"	"11"	111	592228	18.74
+	"Florida"	"12"	2324	18652644	12.46
+	"Georgia"	"13"	1247	9620846	12.96
+	"Hawaii"	"15"	47	1346717	3.49
+	"Idaho"	"16"	196	1554439	12.61
+	"Illinois"	"17"	1058	12796778	8.27
+	"Indiana"	"18"	735	6459325	11.38
+	"Iowa"	"19"	193	3032870	6.36
+	"Kansas"	"20"	303	2832704	10.70
+	"Kentucky"	"21"	560	4317074	12.97
+	"Louisiana"	"22"	810	4491648	18.03
+	"Maine"	"23"	122	1329590	9.18
+	"Maryland"	"24"	586	5730388	10.23
+	"Massachusetts"	"25"	207	6517613	3.18
+	"Michigan"	"26"	1095	9901591	11.06
+	"Minnesota"	"27"	336	5281203	6.36
+	"Mississippi"	"28"	487	2958774	16.46
+	"Missouri"	"29"	822	5961088	13.79
+	"Montana"	"30"	166	983982	16.87
+	"Nebraska"	"31"	132	1812683	7.28
+	"Nevada"	"32"	406	2684665	15.12
+	"New Hampshire"	"33"	89	1316102	6.76
+	"New Jersey"	"34"	411	8755602	4.69
+	"New Mexico"	"35"	299	2036802	14.68
+	"New York"	"36"	958	19307066	4.96
+	"North Carolina"	"37"	1112	9449566	11.77
+	"North Dakota"	"38"	59	664968	8.87
+	"Ohio"	"39"	991	11528896	8.60
+	"Oklahoma"	"40"	533	3717572	14.34
+	"Oregon"	"41"	417	3808600	10.95
+	"Pennsylvania"	"42"	1349	12666858	10.65
+	"Rhode Island"	"44"	56	1053646	5.31
+	"South Carolina"	"45"	634	4589872	13.81
+	"South Dakota"	"46"	75	807067	9.29
+	"Tennessee"	"47"	966	6306019	15.32
+	"Texas"	"48"	2691	24801761	10.85
+	"Utah"	"49"	260	2723421	9.55
+	"Vermont"	"50"	60	624817	9.60
+	"Virginia"	"51"	836	7925937	10.55
+	"Washington"	"53"	623	6667426	9.34
+	"West Virginia"	"54"	251	1847775	13.58
+	"Wisconsin"	"55"	457	5669264	8.06
+	"Wyoming"	"56"	96	559851	17.15
+"Total"			31347	306771529	10.22
+"---"
+"Dataset: Compressed Mortality, 1999-2016"
+"Query Parameters:"
+"Injury Mechanism & All Other Leading Causes: Firearm"
+"Year: 2009"
+"Group By: State"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cmf.html for more information."
+"---"
+"Query Date: Apr 26, 2023 10:30:55 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality: Compressed Mortality File 1999-2016 on CDC WONDER Online Database, released June 2017. Data are from the"
+"Compressed Mortality File 1999-2016 Series 20 No. 2U, 2016, as compiled from data provided by the 57 vital statistics"
+"jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/cmf-icd10.html on Apr 26, 2023"
+"10:30:55 PM"
+"---"
+Caveats:
+"1. About population figures for regions, divisions, states and counties: population figures for 1999 are from the 1990-1999"
+"series of bridged-race intercensal estimates of the July 1 resident population; population figures for 2000 and 2010 are"
+"bridged-race April 1 census counts; population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race"
+"intercensal estimates of the July 1 resident population; and population figures for 2011-2015 are bridged-race postcensal"
+"estimates of the July 1 resident population, from the Vintage 2015 series released by NCHS on June 28, 2016."
+"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/cmf.html#Age Group."
+"3. Circumstances in Georgia for the years 2008-2009 have resulted in unusually high death counts for the ICD-10 cause of death"
+"code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data. More"
+"information: http://wonder.cdc.gov/wonder/help/cmf.html#Georgia-Reporting-Anomalies."
+"4. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/cmf.html#New-Jersey-Reporting-Anomalies."

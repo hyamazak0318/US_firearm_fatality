@@ -1,0 +1,85 @@
+"Notes"	"State"	"State Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	820	4718206	17.38
+	"Alaska"	"02"	142	687455	20.66
+	"Arizona"	"04"	907	6280362	14.44
+	"Arkansas"	"05"	444	2874554	15.45
+	"California"	"06"	3171	36604337	8.66
+	"Colorado"	"08"	513	4889730	10.49
+	"Connecticut"	"09"	200	3545579	5.64
+	"Delaware"	"10"	95	883874	10.75
+	"District of Columbia"	"11"	137	580236	23.61
+	"Florida"	"12"	2334	18527305	12.60
+	"Georgia"	"13"	1177	9504843	12.38
+	"Hawaii"	"15"	41	1332213	3.08
+	"Idaho"	"16"	175	1534320	11.41
+	"Illinois"	"17"	1105	12747038	8.67
+	"Indiana"	"18"	723	6424806	11.25
+	"Iowa"	"19"	224	3016734	7.43
+	"Kansas"	"20"	277	2808076	9.86
+	"Kentucky"	"21"	576	4289878	13.43
+	"Louisiana"	"22"	822	4435586	18.53
+	"Maine"	"23"	122	1330509	9.17
+	"Maryland"	"24"	665	5684965	11.70
+	"Massachusetts"	"25"	224	6468967	3.46
+	"Michigan"	"26"	1081	9946889	10.87
+	"Minnesota"	"27"	371	5247018	7.07
+	"Mississippi"	"28"	568	2947806	19.27
+	"Missouri"	"29"	818	5923916	13.81
+	"Montana"	"30"	155	976415	15.87
+	"Nebraska"	"31"	150	1796378	8.35
+	"Nevada"	"32"	404	2653630	15.22
+	"New Hampshire"	"33"	93	1315906	7.07
+	"New Jersey"	"34"	429	8711090	4.92
+	"New Mexico"	"35"	294	2010662	14.62
+	"New York"	"36"	963	19212436	5.01
+	"North Carolina"	"37"	1160	9309449	12.46
+	"North Dakota"	"38"	59	657569	8.97
+	"Ohio"	"39"	1115	11515391	9.68
+	"Oklahoma"	"40"	513	3668976	13.98
+	"Oregon"	"41"	385	3768748	10.22
+	"Pennsylvania"	"42"	1345	12612285	10.66
+	"Rhode Island"	"44"	44	1055003	4.17
+	"South Carolina"	"45"	615	4528996	13.58
+	"South Dakota"	"46"	83	799124	10.39
+	"Tennessee"	"47"	985	6247411	15.77
+	"Texas"	"48"	2598	24309039	10.69
+	"Utah"	"49"	238	2663029	8.94
+	"Vermont"	"50"	54	624151	8.65
+	"Virginia"	"51"	817	7833496	10.43
+	"Washington"	"53"	587	6562231	8.95
+	"West Virginia"	"54"	239	1840310	12.99
+	"Wisconsin"	"55"	443	5640996	7.85
+	"Wyoming"	"56"	93	546043	17.03
+"Total"			31593	304093966	10.39
+"---"
+"Dataset: Compressed Mortality, 1999-2016"
+"Query Parameters:"
+"Injury Mechanism & All Other Leading Causes: Firearm"
+"Year: 2008"
+"Group By: State"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cmf.html for more information."
+"---"
+"Query Date: Apr 26, 2023 10:31:13 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality: Compressed Mortality File 1999-2016 on CDC WONDER Online Database, released June 2017. Data are from the"
+"Compressed Mortality File 1999-2016 Series 20 No. 2U, 2016, as compiled from data provided by the 57 vital statistics"
+"jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/cmf-icd10.html on Apr 26, 2023"
+"10:31:13 PM"
+"---"
+Caveats:
+"1. About population figures for regions, divisions, states and counties: population figures for 1999 are from the 1990-1999"
+"series of bridged-race intercensal estimates of the July 1 resident population; population figures for 2000 and 2010 are"
+"bridged-race April 1 census counts; population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race"
+"intercensal estimates of the July 1 resident population; and population figures for 2011-2015 are bridged-race postcensal"
+"estimates of the July 1 resident population, from the Vintage 2015 series released by NCHS on June 28, 2016."
+"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/cmf.html#Age Group."
+"3. Circumstances in Georgia for the years 2008-2009 have resulted in unusually high death counts for the ICD-10 cause of death"
+"code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data. More"
+"information: http://wonder.cdc.gov/wonder/help/cmf.html#Georgia-Reporting-Anomalies."

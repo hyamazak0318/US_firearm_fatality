@@ -1,0 +1,82 @@
+"Notes"	"State"	"State Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	765	4503491	16.99
+	"Alaska"	"02"	120	648414	18.51
+	"Arizona"	"04"	849	5510364	15.41
+	"Arkansas"	"05"	413	2724816	15.16
+	"California"	"06"	3468	35253159	9.84
+	"Colorado"	"08"	501	4528732	11.06
+	"Connecticut"	"09"	153	3484336	4.39
+	"Delaware"	"10"	65	818003	7.95
+	"District of Columbia"	"11"	167	568502	29.38
+	"Florida"	"12"	1940	17004085	11.41
+	"Georgia"	"13"	1173	8622793	13.60
+	"Hawaii"	"15"	37	1251154	2.96
+	"Idaho"	"16"	164	1363380	12.03
+	"Illinois"	"17"	1146	12556006	9.13
+	"Indiana"	"18"	696	6196638	11.23
+	"Iowa"	"19"	208	2941999	7.07
+	"Kansas"	"20"	304	2723004	11.16
+	"Kentucky"	"21"	560	4117170	13.60
+	"Louisiana"	"22"	847	4521042	18.73
+	"Maine"	"23"	82	1306513	6.28
+	"Maryland"	"24"	648	5496269	11.79
+	"Massachusetts"	"25"	204	6422565	3.18
+	"Michigan"	"26"	1030	10041152	10.26
+	"Minnesota"	"27"	332	5053572	6.57
+	"Mississippi"	"28"	477	2868312	16.63
+	"Missouri"	"29"	657	5709403	11.51
+	"Montana"	"30"	145	919630	15.77
+	"Nebraska"	"31"	134	1738643	7.71
+	"Nevada"	"32"	374	2248850	16.63
+	"New Hampshire"	"33"	89	1279840	6.95
+	"New Jersey"	"34"	458	8601402	5.32
+	"New Mexico"	"35"	326	1877574	17.36
+	"New York"	"36"	1034	19175939	5.39
+	"North Carolina"	"37"	1055	8422501	12.53
+	"North Dakota"	"38"	58	638817	9.08
+	"Ohio"	"39"	934	11434788	8.17
+	"Oklahoma"	"40"	449	3504892	12.81
+	"Oregon"	"41"	395	3547376	11.13
+	"Pennsylvania"	"42"	1230	12374658	9.94
+	"Rhode Island"	"44"	35	1071342	3.27
+	"South Carolina"	"45"	593	4150297	14.29
+	"South Dakota"	"46"	76	763729	9.95
+	"Tennessee"	"47"	837	5847812	14.31
+	"Texas"	"48"	2432	22030931	11.04
+	"Utah"	"49"	230	2360137	9.75
+	"Vermont"	"50"	48	617858	7.77
+	"Virginia"	"51"	811	7366977	11.01
+	"Washington"	"53"	565	6104115	9.26
+	"West Virginia"	"54"	265	1812295	14.62
+	"Wisconsin"	"55"	468	5479203	8.54
+	"Wyoming"	"56"	89	503453	17.68
+"Total"			30136	290107933	10.39
+"---"
+"Dataset: Compressed Mortality, 1999-2016"
+"Query Parameters:"
+"Injury Mechanism & All Other Leading Causes: Firearm"
+"Year: 2003"
+"Group By: State"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cmf.html for more information."
+"---"
+"Query Date: Apr 27, 2023 2:04:41 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality: Compressed Mortality File 1999-2016 on CDC WONDER Online Database, released June 2017. Data are from the"
+"Compressed Mortality File 1999-2016 Series 20 No. 2U, 2016, as compiled from data provided by the 57 vital statistics"
+"jurisdictions through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/cmf-icd10.html on Apr 27, 2023"
+"2:04:41 PM"
+"---"
+Caveats:
+"1. About population figures for regions, divisions, states and counties: population figures for 1999 are from the 1990-1999"
+"series of bridged-race intercensal estimates of the July 1 resident population; population figures for 2000 and 2010 are"
+"bridged-race April 1 census counts; population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race"
+"intercensal estimates of the July 1 resident population; and population figures for 2011-2015 are bridged-race postcensal"
+"estimates of the July 1 resident population, from the Vintage 2015 series released by NCHS on June 28, 2016."
+"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/cmf.html#Age Group."
