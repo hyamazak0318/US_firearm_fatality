@@ -3,6 +3,7 @@
 ## Background
 
 Gun violence has been a public concern in the U.S. In 2020, 79 percent of all homicides and 53 percent of all suicides were by firearms (Johns Hopkins Center for Gun Violence Solutions, 2022). Despite strong public support for legislative changes, partisan polarization hinders taking action for implementing stricter gun control laws. 
+
 With this in mind, the purpose of this project is to gain an insight into how the number of overall firearm-related deaths and gun ownership are associated in reality.
 
 ## Input Data
