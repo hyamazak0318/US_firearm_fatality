@@ -77,6 +77,7 @@ This project contains three scripts, which should be run in the following order.
 ## Output and Implications
 
 - `02_own_fat_rate.py`
+
     This script produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
     - Open QGIS. Save the project as `"map.qgz"`
     - Click on the "*Add Vector Layer*" on the toolbar
@@ -100,6 +101,7 @@ This project contains three scripts, which should be run in the following order.
     - Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
 - `03_analyses.py`
+
     This script produces a set of figures.
     - **plot_US.png**
         ![plot_US](plot_US.png)
@@ -120,12 +122,14 @@ This project contains three scripts, which should be run in the following order.
         - Although the CIs are broad due to the limited sample size, there seem to be slightly positive correlations between firearm-related fatality rate and household firearm ownership rate within the states.
 
     - **plot_high.png** and **plot_low.png**
+
         ![plot_high](plot_high.png)
         ![plot_low](plot_low.png)
         - These figures place the groups of data points and the regression lines depicted in the previous figure on separate planes by state.
         - In the states with a high household firearm ownership rate, there are wider variations in firearm-related fatality rate than in the states with a low firearm ownership rate, making the CIs broad.
 
     - **plot_high_per.png** and **plot_low_per.png**
+
         ![plot_high_per](plot_high_per.png)
         ![plot_low_per](plot_low_per.png)
         - These figures separate the 15 years into three periods and color the data points depicted in the previous set of figures by the period.
