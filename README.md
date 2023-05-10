@@ -77,6 +77,7 @@ This project contains three scripts, which should be run in the following order.
 ## Output and Implications
 
 - `02_own_fat_rate.py`
+
     This script produces a geopackage file called "**map.gpkg**" that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
     - Open QGIS. Save the project as `"map.qgz"`
     - Click on the "*Add Vector Layer*" on the toolbar
@@ -101,6 +102,7 @@ This project contains three scripts, which should be run in the following order.
 
 
 - `03_analyses.py`
+
     This script produces a set of figures.
 
     - **plot_US.png**
