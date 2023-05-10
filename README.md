@@ -2,6 +2,8 @@
 
 ## Background
 
+Gun violence has been a public concern in the U.S. In 2020, 79 percent of all homicides and 53 percent of all suicides were by firearms (Johns Hopkins Center for Gun Violence Solutions, 2022). Despite strong public support for legislative changes, partisan polarization hinders taking action for implementing stricter gun control laws. 
+With this in mind, the purpose of this project is to gain an insight into how the number of overall firearm-related deaths and gun ownership are associated in reality.
 
 ## Input Data
 
@@ -90,7 +92,7 @@ You could lay out the map with the legend and other information by the following
 
 The deliverable should look like:
 ![HFR_map](HFR_map.png)
-Generally speaking, the lower the population density is, the higher the firearm ownership rate seems to be.
+Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
 The "**03_analyses.py**" file produces a set of figures.
 - **plot_US.png**
@@ -122,3 +124,6 @@ The "**03_analyses.py**" file produces a set of figures.
     - Each data point indicates the average household firearm ownership rate (or firearm-related fatality rate) during the first 5 years in the 15 years on the x-axis and that during the last 5 years on the y-axis for a given state.
     - The fitted line for household firearm ownership rate overlaps with the 45-degree line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
     - On the other hand, the fitted line for firearm-related fatality rate runs above the 45-degree line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
+
+## References
+Johns Hopkins Center for Gun Violence Solutions. (2022). A Year in Review: 2020 Gun Deaths in the U.S. Available: https://publichealth.jhu.edu/gun-violence-solutions.
