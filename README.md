@@ -77,7 +77,6 @@ This project contains three scripts, which should be run in the following order.
 ## Output and Implications
 
 - `02_own_fat_rate.py`
-
     This script produces a geopackage file called "**map.gpkg**" that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
     - Open QGIS. Save the project as `"map.qgz"`
     - Click on the "*Add Vector Layer*" on the toolbar
@@ -100,21 +99,25 @@ This project contains three scripts, which should be run in the following order.
     ![HFR_map](HFR_map.png)
     Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
-- `03_analyses.py`
 
+- `03_analyses.py`
     This script produces a set of figures.
+
     - **plot_US.png**
+
         ![plot_US](plot_US.png)
         - This figure shows the scatter plot of all the data points across the U.S. with household firearm ownership rate on the x-axis and firearm-related fatality rate on the y-axis. 
         - Each data point is for a given state in a given year. 
         - This figure also shows the regression line of firearm-related fatality rate on household firearm ownership rate, which indicates a positive correlation between those variables in the entire U.S.
 
     - **rank_HFR.png**
+
         ![rank_HFR](rank_HFR.png)
         - This figure shows the horizontal bar graph ranking the top 5 states with each high and low household firearm ownership rate in 2016. 
         - There is a nearly 60 percentage point gap in household firearm ownership rate between the states with the highest and the lowest rate.
 
     - **plot_high_low.png**
+
         ![plot_high_low](plot_high_low.png)
         - This figure plots the data points for each state identified in the previous figure. 
         - It also draws the regression line for each group of data points. 
@@ -137,6 +140,7 @@ This project contains three scripts, which should be run in the following order.
         - In New York state, both household firearm ownership rate and firearm fatality rate have decreased.
 
     - **own_trend.png** and **fat_trend.png**
+
         ![own_trend](own_trend.png)
         ![fat_trend](fat_trend.png)
         - These figures show the trend in household firearm ownership rate and firearm-related fatality rate each across the U.S.
