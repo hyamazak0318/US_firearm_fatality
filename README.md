@@ -35,7 +35,7 @@ The input data are derived from three different sources.
         - Then click on "*Send*"
         ![Data source 5](Data-source/Data-source_5.png)
         - The result should be a text file named `"Compressed Mortality, 1999-2016.txt"`
-        - Rename the file as the selected year–e.g. `"2016.txt"`
+        - Rename the file as the selected year (e.g. `"2016.txt"`)
         - Put the file in a folder named `"fatality-data"`
 
 3. **TIGER/Line Shapefiles**
@@ -77,68 +77,68 @@ This project contains three scripts, which should be run in the following order.
 ## Output and Implications
 
 - `02_own_fat_rate.py`
-    - This script produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
-        - Open QGIS. Save the project as `"map.qgz"`
-        - Click on the "Add Vector Layer" on the toolbar
-        - Select `"map.gpkg"` and then confirm "*Add*"
-        - In the "*Layer Styling*" panel, click on the "*Labels*" tab
-        - Click on the "*Single Labels*" from the pulldown list, then choose "*NAME*" as the value
-        - Adjust the font size and the text buffer as necessary
-        - In the "*Layer Styling*" panel, click on the "*Symbology*" tab
-        - Click on the "*Graduated*" from the pulldown list, then choose "*own_rate_2016*" as the value
-        - Choose "Natural Breaks" as the mode, then click on "*Classify*"
+    This script produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
+    - Open QGIS. Save the project as `"map.qgz"`
+    - Click on the "*Add Vector Layer*" on the toolbar
+    - Select `"map.gpkg"` and then confirm "*Add*"
+    - In the "*Layer Styling*" panel, click on the "*Labels*" tab
+    - Click on the "*Single Labels*" from the pulldown list, then choose "*NAME*" as the value
+    - Adjust the font size and the text buffer as necessary
+    - In the "*Layer Styling*" panel, click on the "*Symbology*" tab
+    - Click on the "*Graduated*" from the pulldown list, then choose "*own_rate_2016*" as the value
+    - Choose "Natural Breaks" as the mode, then click on "*Classify*"
 
-    - You could lay out the map with the legend and other information by the following steps:
-        - From the "*Project*" menu, select the "*New Print Layout*"
-        - Set any title
-        - Click on "*Add Map*" from the toolbox, then add the map on the plane
-        - Add items like legend and labels as appropriate
-        - Save the map as `"HFR_map.png"`
+    You could lay out the map with the legend and other information by the following steps:
+    - From the "*Project*" menu, select the "*New Print Layout*"
+    - Set any title
+    - Click on "*Add Map*" from the toolbox, then add the map on the plane
+    - Add items like legend and labels as appropriate
+    - Save the map as `"HFR_map.png"`
 
-    - The deliverable should look like:
-        ![HFR_map](HFR_map.png)
-        - Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
+    The deliverable should look like:
+    ![HFR_map](HFR_map.png)
+    - Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
 - `03_analyses.py`
-    - This script produces a set of figures.
-        - **plot_US.png**
-            ![plot_US](plot_US.png)
-            - This figure shows the scatter plot of all the data points across the U.S. with household firearm ownership rate on the x-axis and firearm-related fatality rate on the y-axis. 
-            - Each data point is for a given state in a given year. 
-            - This figure also shows the regression line of firearm-related fatality rate on household firearm ownership rate, which indicates a positive correlation between those variables in the entire U.S.
+    This script produces a set of figures.
+    - **plot_US.png**
+        ![plot_US](plot_US.png)
+        - This figure shows the scatter plot of all the data points across the U.S. with household firearm ownership rate on the x-axis and firearm-related fatality rate on the y-axis. 
+        - Each data point is for a given state in a given year. 
+        - This figure also shows the regression line of firearm-related fatality rate on household firearm ownership rate, which indicates a positive correlation between those variables in the entire U.S.
 
-- **rank_HFR.png**
-    ![rank_HFR](rank_HFR.png)
-    - This figure shows the horizontal bar graph ranking the top 5 states with each high and low household firearm ownership rate in 2016. 
-    - There is a nearly 60 percentage point gap in household firearm ownership rate between the states with the highest and the lowest rate.
+    - **rank_HFR.png**
+        ![rank_HFR](rank_HFR.png)
+        - This figure shows the horizontal bar graph ranking the top 5 states with each high and low household firearm ownership rate in 2016. 
+        - There is a nearly 60 percentage point gap in household firearm ownership rate between the states with the highest and the lowest rate.
 
-- **plot_high_low.png**
-    ![plot_high_low](plot_high_low.png)
-    - This figure plots the data points for each state identified in the previous figure. 
-    - It also draws the regression line for each group of data points. 
-    - The shaded areas represent 95% confidence intervals (CIs). 
-    - Although the CIs are broad due to the limited sample size, there seem to be slightly positive correlations between firearm-related fatality rate and household firearm ownership rate within the states.
+    - **plot_high_low.png**
+        ![plot_high_low](plot_high_low.png)
+        - This figure plots the data points for each state identified in the previous figure. 
+        - It also draws the regression line for each group of data points. 
+        - The shaded areas represent 95% confidence intervals (CIs). 
+        - Although the CIs are broad due to the limited sample size, there seem to be slightly positive correlations between firearm-related fatality rate and household firearm ownership rate within the states.
 
-- **plot_high.png** and **plot_low.png**
-    ![plot_high](plot_high.png)
-    ![plot_low](plot_low.png)
-    - These figures place the groups of data points and the regression lines depicted in the previous figure on separate planes by state.
-    - In the states with a high household firearm ownership rate, there are wider variations in firearm-related fatality rate than in the states with a low firearm ownership rate, making the CIs broad.
+    - **plot_high.png** and **plot_low.png**
+        ![plot_high](plot_high.png)
+        ![plot_low](plot_low.png)
+        - These figures place the groups of data points and the regression lines depicted in the previous figure on separate planes by state.
+        - In the states with a high household firearm ownership rate, there are wider variations in firearm-related fatality rate than in the states with a low firearm ownership rate, making the CIs broad.
 
-- **plot_high_per.png** and **plot_low_per.png**
-    ![plot_high_per](plot_high_per.png)
-    ![plot_low_per](plot_low_per.png)
-    - These figures separate the 15 years into three periods and color the data points depicted in the previous set of figures by the period.
-    - In the states with a high firearm ownership rate, data points for the last 5 years in the 15 years are positioned in the upper area, suggesting that firearm fatality rates have increased over time in these states.
-    - In New York state, both household firearm ownership rate and firearm fatality rate have decreased.
+    - **plot_high_per.png** and **plot_low_per.png**
+        ![plot_high_per](plot_high_per.png)
+        ![plot_low_per](plot_low_per.png)
+        - These figures separate the 15 years into three periods and color the data points depicted in the previous set of figures by the period.
+        - In the states with a high firearm ownership rate, data points for the last 5 years in the 15 years are positioned in the upper area, suggesting that firearm fatality rates have increased over time in these states.
+        - In New York state, both household firearm ownership rate and firearm fatality rate have decreased.
 
-- **own_trend.png** and **fat_trend.png**
-    ![own_trend](own_trend.png)
-    ![fat_trend](fat_trend.png)
-    - These figures show the trend in household firearm ownership rate and firearm-related fatality rate each across the U.S.
-    - Each data point indicates the average household firearm ownership rate (or firearm-related fatality rate) during the first 5 years in the 15 years on the x-axis and that during the last 5 years on the y-axis for a given state.
-    - The fitted line for household firearm ownership rate overlaps with the 45-degree line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
-    - On the other hand, the fitted line for firearm-related fatality rate runs above the 45-degree line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
+    - **own_trend.png** and **fat_trend.png**
+        ![own_trend](own_trend.png)
+        ![fat_trend](fat_trend.png)
+        - These figures show the trend in household firearm ownership rate and firearm-related fatality rate each across the U.S.
+        - Each data point indicates the average household firearm ownership rate (or firearm-related fatality rate) during the first 5 years in the 15 years on the x-axis and that during the last 5 years on the y-axis for a given state.
+        - The fitted line for household firearm ownership rate overlaps with the 45-degree line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
+        - On the other hand, the fitted line for firearm-related fatality rate runs above the 45-degree line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
 
 ## References
 Johns Hopkins Center for Gun Violence Solutions. (2022). *A Year in Review: 2020 Gun Deaths in the U.S.* Available: https://publichealth.jhu.edu/gun-violence-solutions.
