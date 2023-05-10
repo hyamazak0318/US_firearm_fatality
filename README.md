@@ -72,7 +72,7 @@ This project contains three scripts, which should be run in the following order.
     - Identifying the top 5 states with each high and low firearm ownership rates
     - Examining the associations between firearm ownership rate and firearm fatality rate for the 10 states by creating the scatter plot for each state
     - Investigating how firearm ownership rate and firearm-related fatality rate have changed over time in each state by coloring the data points by year
-    - Exploring how firearm ownership rate and firearm-related fatality rate have changed over time across the U.S. by plotting data points over the 45-degree line.
+    - Exploring how firearm ownership rate and firearm-related fatality rate have changed over time across the U.S. by plotting data points over the 45-degree line
 
 ## Output and Implications
 
@@ -96,9 +96,9 @@ This project contains three scripts, which should be run in the following order.
     - Add items like legend and labels as appropriate
     - Save the map as `"HFR_map.png"`
 
-    The deliverable should look like:
+    The deliverable would look like:
     ![HFR_map](HFR_map.png)
-    - Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
+    Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
 - `03_analyses.py`
 
@@ -141,8 +141,8 @@ This project contains three scripts, which should be run in the following order.
         ![fat_trend](fat_trend.png)
         - These figures show the trend in household firearm ownership rate and firearm-related fatality rate each across the U.S.
         - Each data point indicates the average household firearm ownership rate (or firearm-related fatality rate) during the first 5 years in the 15 years on the x-axis and that during the last 5 years on the y-axis for a given state.
-        - The fitted line for household firearm ownership rate overlaps with the 45-degree line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
-        - On the other hand, the fitted line for firearm-related fatality rate runs above the 45-degree line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
+        - The trend line for household firearm ownership rate overlaps with the diagonal line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
+        - On the other hand, the fitted line for firearm-related fatality rate runs above the diagonal line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
 
 ## References
 Johns Hopkins Center for Gun Violence Solutions. (2022). *A Year in Review: 2020 Gun Deaths in the U.S.* Available: https://publichealth.jhu.edu/gun-violence-solutions.
