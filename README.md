@@ -13,7 +13,7 @@ The input data are derived from three different sources.
     - The proportion of adults living in a household with a firearm for each state in each year between 1980 and 2016 estimated by combining data from surveys and administrative sources
     - Publicized by the RAND Corporation in 2020
     - Visit https://www.rand.org/pubs/tools/TL354.html and click on "*DOWNLOAD THE DATABASE*"
-    - You will download a zip file that contains the input excel file named `TL-354-State-Level Estimates of Household Firearm Ownership.xlsx`
+    - You will download a zip file that contains the input excel file named `"TL-354-State-Level Estimates of Household Firearm Ownership.xlsx"`
 
 2. **State-level firearm-related fatality rate**
     - The number of firearm-related deaths per 100,000 total population in each state, including any causes such as suicide, homicide, and accidents
@@ -32,21 +32,21 @@ The input data are derived from three different sources.
         ![Data source 4](Data-source/Data-source_4.png)
         - Check the box of "*Export Results*"
         - Set the decimal place to "*2*"
-        - Then click "*Send*"
+        - Then click on "*Send*"
         ![Data source 5](Data-source/Data-source_5.png)
-        - The result should be a text file named `Compressed Mortality, 1999-2016.txt`
-        - Rename the file as the year–e.g. `2016.txt`
-        - Put the file in a folder named `fatality-data`
+        - The result should be a text file named `"Compressed Mortality, 1999-2016.txt"`
+        - Rename the file as the selected year–e.g. `"2016.txt"`
+        - Put the file in a folder named `"fatality-data"`
 
 3. **TIGER/Line Shapefiles**
     - U.S. Census Bureau's geographic spatial data
     - Visit https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
     - Follow the steps below
         - Choose any year (e.g. 2020)
-        - Scroll down to "2020 TIGER/Line Shapefiles" and click on "Web Interface"
-        - Select year: 2020
-        - Select a layer type: States (and equivalent)
-        - Click on "Submit", and you will download a zip file named `tl_2020_us_state.zip`
+        - Scroll down to "*2020 TIGER/Line Shapefiles*" and click on "*Web Interface*"
+        - Select year: "*2020*"
+        - Select a layer type: "*States (and equivalent)*"
+        - Click on "*Submit*", and you will download a zip file named `"tl_2020_us_state.zip"`
 
 ## Script
 
@@ -55,15 +55,15 @@ This project contains three scripts, which should be run in the following order.
 
     This script 
     - constructs the data set of firearm-related fatality rate in each state for each year during 2002-2016 from the input text files.
-    - writes out the data set into a csv file named `fatality.csv`
+    - writes out the data set into a csv file named `"fatality.csv"`
 
 2. **02_own_fat_rate.py**
 
     This script
     - cleans up the data set of the state-level household firearm ownership rate derived from the input excel file.
     - constructs the panel data consisting of 15 years of state-level gun ownership rate and firearm-related fatality rate by merging the deliverable of the previous script and the data set produced in the previous step.
-    - writes out the panel data into a csv file named `own_fat_rate.csv`
-    - produces a geopackage file named `map.gpkg` that allows you to visualize the data on a map via QGIS.
+    - writes out the panel data into a csv file named `"own_fat_rate.csv"`
+    - produces a geopackage file named `"map.gpkg"` that allows you to visualize the data on a map via QGIS.
 
 3. **03_analyses.py**
 
@@ -76,34 +76,36 @@ This project contains three scripts, which should be run in the following order.
 
 ## Output and Implications
 
-- The `02_own_fat_rate.py` file produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
-    - Open QGIS. Save the project as `map.qgz`
-    - Click on the "Add Vector Layer" on the toolbar
-    - Select `map.gpkg` and then confirm "*Add*"
-    - In the "*Layer Styling*" panel, click on the "*Labels*" tab
-    - Click on the "*Single Labels*" from the pulldown list, then choose "*NAME*" as the value
-    - Adjust the font size and the text buffer as necessary
-    - In the "*Layer Styling*" panel, click on the "*Symbology*" tab
-    - Click on the "*Graduated*" from the pulldown list, then choose "*own_rate_2016*" as the value
-    - Choose "Natural Breaks" as the mode, then click on "*Classify*"
+- `02_own_fat_rate.py`
+    - This script produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
+        - Open QGIS. Save the project as `"map.qgz"`
+        - Click on the "Add Vector Layer" on the toolbar
+        - Select `"map.gpkg"` and then confirm "*Add*"
+        - In the "*Layer Styling*" panel, click on the "*Labels*" tab
+        - Click on the "*Single Labels*" from the pulldown list, then choose "*NAME*" as the value
+        - Adjust the font size and the text buffer as necessary
+        - In the "*Layer Styling*" panel, click on the "*Symbology*" tab
+        - Click on the "*Graduated*" from the pulldown list, then choose "*own_rate_2016*" as the value
+        - Choose "Natural Breaks" as the mode, then click on "*Classify*"
 
-You could lay out the map with the legend and other information by the following steps:
-- From the "*Project*" menu, select the "*New Print Layout*"
-- Set any title
-- Click on "*Add Map*" from the toolbox, then add the map on the plane
-- Add items like legend and labels as appropriate
-- Save the map as `HFR_map.png`
+    - You could lay out the map with the legend and other information by the following steps:
+        - From the "*Project*" menu, select the "*New Print Layout*"
+        - Set any title
+        - Click on "*Add Map*" from the toolbox, then add the map on the plane
+        - Add items like legend and labels as appropriate
+        - Save the map as `"HFR_map.png"`
 
-The deliverable should look like:
-![HFR_map](HFR_map.png)
-Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
+    - The deliverable should look like:
+        ![HFR_map](HFR_map.png)
+        - Generally speaking, household firearm ownership rate seems to be high in states where population density is low.
 
-The `03_analyses.py` file produces a set of figures.
-- **plot_US.png**
-    ![plot_US](plot_US.png)
-    - This figure shows the scatter plot of all the data points across the U.S. with household firearm ownership rate on the x-axis and firearm-related fatality rate on the y-axis. 
-    - Each data point is for a given state in a given year. 
-    - This figure also shows the regression line of firearm-related fatality rate on household firearm ownership rate, which indicates a positive correlation between those variables in the entire U.S.
+- `03_analyses.py`
+    - This script produces a set of figures.
+        - **plot_US.png**
+            ![plot_US](plot_US.png)
+            - This figure shows the scatter plot of all the data points across the U.S. with household firearm ownership rate on the x-axis and firearm-related fatality rate on the y-axis. 
+            - Each data point is for a given state in a given year. 
+            - This figure also shows the regression line of firearm-related fatality rate on household firearm ownership rate, which indicates a positive correlation between those variables in the entire U.S.
 
 - **rank_HFR.png**
     ![rank_HFR](rank_HFR.png)
@@ -139,4 +141,4 @@ The `03_analyses.py` file produces a set of figures.
     - On the other hand, the fitted line for firearm-related fatality rate runs above the 45-degree line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
 
 ## References
-Johns Hopkins Center for Gun Violence Solutions. (2022). A Year in Review: 2020 Gun Deaths in the U.S. Available: https://publichealth.jhu.edu/gun-violence-solutions.
+Johns Hopkins Center for Gun Violence Solutions. (2022). *A Year in Review: 2020 Gun Deaths in the U.S.* Available: https://publichealth.jhu.edu/gun-violence-solutions.
