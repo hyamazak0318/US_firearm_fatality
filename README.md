@@ -26,7 +26,7 @@ The input data are derived from three different sources.
         - Read the terms of use and click "*I Agree*"
         - Select "*State*" from the pulldown list for grouping results
         ![Data source 3](Data-source/Data-source_3.png)
-        - Select a year
+        - Select year
         - Click the button for "*Injury Intent and Mechanism*"
         - Select "*Firearm*" as a cause
         ![Data source 4](Data-source/Data-source_4.png)
@@ -78,7 +78,7 @@ This project contains three scripts, which should be run in the following order.
 
 - `02_own_fat_rate.py`
 
-    This script produces a geopackage file that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
+    This script produces a geopackage file named **`map.gpkg`** that allows you to create heat maps showing household firearm ownership rate or firearm-related fatality rate across the U.S. by year via QGIS. For example, if you want to create a heat map indicating the household firearm ownership rate in 2016, you could follow the steps below (for Mac. The process can vary according to your settings):
     - Open QGIS. Save the project as `"map.qgz"`
     - Click on the "*Add Vector Layer*" on the toolbar
     - Select `"map.gpkg"` and then confirm "*Add*"
@@ -142,7 +142,7 @@ This project contains three scripts, which should be run in the following order.
         - These figures show the trend in household firearm ownership rate and firearm-related fatality rate each across the U.S.
         - Each data point indicates the average household firearm ownership rate (or firearm-related fatality rate) during the first 5 years in the 15 years on the x-axis and that during the last 5 years on the y-axis for a given state.
         - The trend line for household firearm ownership rate overlaps with the diagonal line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
-        - On the other hand, the fitted line for firearm-related fatality rate runs above the diagonal line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
+        - On the other hand, the trend line for firearm-related fatality rate runs above the diagonal line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
 
 ## References
 Johns Hopkins Center for Gun Violence Solutions. (2022). *A Year in Review: 2020 Gun Deaths in the U.S.* Available: https://publichealth.jhu.edu/gun-violence-solutions.
