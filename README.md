@@ -2,9 +2,11 @@
 
 ## Background
 
-Gun violence has been a public concern in the U.S. In 2020, 79 percent of all homicides and 53 percent of all suicides were by firearms (Johns Hopkins Center for Gun Violence Solutions, 2022). Despite strong public support for legislative changes, partisan polarization hinders taking action for implementing stricter gun control laws. 
+Gun violence has been a public concern in the U.S. In 2020, 79 percent of all homicides were by firearms (Johns Hopkins Center for Gun Violence Solutions, 2022). Further, the number of mass shootings is on the rise in recent years (Gramlich, 2023). However, there is partisan debate on whether tightening gun control would make a significant difference, hindering the government's taking immediate action for implementing stricter gun control laws. 
 
-With this in mind, the purpose of this project is to gain an insight into how the number of overall firearm-related deaths and gun ownership are associated in reality.
+Suicides are also a serious problem. Data reveal that suicides are a more common cause of firearm-related deaths than homicide. In 2020, suicides accounted for 54 percent of all firearm-related deaths, while 43 percent were homicides (Saunders, 2022).
+
+With these in mind, the purpose of this project is to gain an insight into how the number of overall firearm-related deaths and gun ownership are associated in reality.
 
 ## Input Data
 
@@ -16,7 +18,7 @@ The input data are derived from three different sources.
     - You will download a zip file that contains the input excel file named `"TL-354-State-Level Estimates of Household Firearm Ownership.xlsx"`
 
 2. **State-level firearm-related fatality rate**
-    - The number of firearm-related deaths per 100,000 total population in each state, including any causes such as suicide, homicide, and accidents
+    - The number of firearm-related deaths per 100,000 total population in each state, including suicides, homicides, legal interventions, accidents, and undetermined causes
     - Available at CDC Wonder Online Databases (visit https://wonder.cdc.gov)
     - Follow the steps below and repeat for the years from 2002 to 2016 as the data can be obtained year by year:
         - Select "*Compressed Mortality*" in the "*Wonder Systems*" tab
@@ -150,5 +152,13 @@ This project contains three scripts, which should be run in the following order.
         - The trend line for household firearm ownership rate overlaps with the diagonal line colored in red, suggesting that household firearm ownership has not changed very much on average across the U.S.
         - On the other hand, the trend line for firearm-related fatality rate runs above the diagonal line, suggesting that the number of firearm-related fatalities is increasing over time on average across the U.S.
 
+## Limitations and Way Forward
+
+This project had limitations in terms of three aspects. First, as only state-level estimates of firearm ownership data can be found, sample size was not sufficient, and some results were somewhat uncertain. Reliable county- or finer level data of firearm ownership would enable research in more detail. Second, as the firearm ownership rate estimates were only available until 2016, the results do not reflect the latest trend. It would be worth looking into the trend before and after COVID-19 pandemic. Lastly, though this research used data for overall number of fatalities, there could be different trend between suicide and homicide. 
+
 ## References
+Gramlich, J. (2023, April). *What the data says about gun deaths in the U.S.* Pew Research Center. https://www.pewresearch.org/short-reads/2023/04/26/what-the-data-says-about-gun-deaths-in-the-u-s/ 
+
 Johns Hopkins Center for Gun Violence Solutions. (2022). *A Year in Review: 2020 Gun Deaths in the U.S.* Available: https://publichealth.jhu.edu/gun-violence-solutions.
+
+Saunders, H. (2022, July). *Do States with Easier Access to Guns Have More Suicide Deaths by Firearm?.* KFF. https://www.kff.org/other/issue-brief/do-states-with-easier-access-to-guns-have-more-suicide-deaths-by-firearm/ 
